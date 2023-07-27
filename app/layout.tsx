@@ -1,6 +1,7 @@
 import MainLayout from "@/components/MainLayout";
 import "./globals.css";
 import type { Metadata } from "next";
+import MenuContextProvider from "@/context/MenuContextProvider";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -15,7 +16,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <MainLayout>{children}</MainLayout>
+        <MenuContextProvider>
+          <MainLayout>{children}</MainLayout>
+        </MenuContextProvider>
       </body>
     </html>
   );
