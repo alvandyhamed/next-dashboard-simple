@@ -5,7 +5,7 @@ import MainHeader from "./MainHeader";
 import { AiOutlineHome } from "react-icons/ai";
 import { GrProjects } from "react-icons/gr";
 import { FaAngleRight, FaCheck, FaCheckDouble } from "react-icons/fa";
-import { FiPhone } from "react-icons/fi";
+import { FiPhone, FiUsers } from "react-icons/fi";
 import { SiHelpscout } from "react-icons/si";
 import { IoIosEasel, IoIosCart, IoIosGrid, IoMdDocument } from "react-icons/io";
 import MenuItem from "./MenuItem";
@@ -45,7 +45,8 @@ const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
               AngleIcon={FaAngleRight}
             />
             <MenuItem Title="Posts" IconTitle={IoIosEasel} LinkedPage="/post" />
-            {/* <MenuItem Title="Shop" IconTitle={IoIosCart} LinkedPage="/shop" /> */}
+            <MenuItem Title="Shop" IconTitle={IoIosCart} LinkedPage="/shop" />
+            <MenuItem Title="Users" IconTitle={FiUsers} LinkedPage="/users" />
             <MenuItem
               Title="Product"
               IconTitle={IoIosGrid}

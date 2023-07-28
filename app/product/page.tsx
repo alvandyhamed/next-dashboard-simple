@@ -14,7 +14,9 @@ function Product(props: Props) {
         <h1>Product 2</h1>
       </Link>
 
-      <Link href="/product/3">
+      {/* for ful back to root */}
+
+      <Link href="/product/3" replace>
         <h1>Product 3</h1>
       </Link>
     </>
